@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservation - Qitchen</title>
+    <meta name="description" content="Book a table at Qitchen.">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="site-shell page-layout">
+      <section class="media-panel side-hero" aria-label="Book a table at Qitchen">
+        <header class="topbar">
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+          <a class="brand" href="../" aria-label="Qitchen home">QITCHEN</a>
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="../menu/">Menu</a>
+            <a href="../about/">About</a>
+            <a class="book-link" href="../reservation/" aria-current="page">Book a Table</a>
+          </nav>
+        </header>
+        <img src="../assets/reservation-table.png" alt="Wine glasses and dark linen on a wood table">
+        <h1 class="headline">Book<br>A Table</h1>
+      </section>
+
+      <section class="content-panel reservation-panel">
+        <div class="reservation-inner">
+          <h1 class="ornament-title">Reservation</h1>
+          <p class="reservation-lede">Secure your spot at Qitchen, where exceptional sushi and a remarkable dining experience await.</p>
+
+          <form class="reservation-form" data-reservation-form>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Smith" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="+1 212 555 7890" required>
+            </div>
+
+            <div class="field">
+              <label for="people">People</label>
+              <select id="people" name="people" required>
+                <option value="">1-10</option>
+                <option>1 person</option>
+                <option>2 people</option>
+                <option>3 people</option>
+                <option>4 people</option>
+                <option>5 people</option>
+                <option>6 people</option>
+                <option>7-10 people</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="time">Time</label>
+              <input id="time" name="time" type="time" required>
+            </div>
+
+            <button class="form-button" type="submit">Request Reservation</button>
+            <p class="submit-status" data-submit-status aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>
