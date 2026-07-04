@@ -6,6 +6,12 @@ Qitchen is a dark, cinematic sushi restaurant website inspired by a premium Fram
 
 ## Live Demo
 
+Production demo:
+
+```text
+https://qitchen-animated-restaurant-website.vercel.app
+```
+
 If you are running this project locally, start a static server from the project root:
 
 ```bash
@@ -107,6 +113,8 @@ No install step is required.
 
 ## Deploy
 
+This repository includes `vercel.json`, so Vercel can serve the correct static output folder without a build step.
+
 For static hosting services such as Netlify, Vercel, Cloudflare Pages, or GitHub Pages, use this folder as the publish directory:
 
 ```text
@@ -141,3 +149,13 @@ The main animation keyframes are also in `styles.css`:
 ## Notes
 
 This is a static front-end project. The reservation form displays an in-page success message and does not submit data to a backend.
+
+## Suggested GitHub Topics
+
+```text
+html css javascript restaurant-website animated-website responsive-design landing-page vercel frontend web-design
+```
+
+## License
+
+This project is available under the MIT License. See [LICENSE](LICENSE).
